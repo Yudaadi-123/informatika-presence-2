@@ -1,0 +1,431 @@
+.body-index {
+   background-image:url(image.png);
+   background-size:cover;
+   scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: black;
+    padding: 1rem;
+    scroll-behavior: smooth;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+}  
+nav ul button {
+    display: inline;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+.button-link {
+    background-color: yellow;
+    height: 50px;
+    width: 150px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+.button-link::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px
+}
+/* glow */
+.button-link::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.button-link:hover::before {
+    opacity: 1;
+}
+.button-link:active:after{
+    background: transparent;
+}
+.button-link:active{
+    color:#000;
+    font-weight: bold;
+}
+
+.container-button {
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    transform: translate(-60%, -54%);
+}
+.h1-footer {
+    color: white
+}
+.div-footer {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -52%);
+}
+.div-1-penyusun {
+    background-color: red;
+    background-image:url(bendera.png);
+    background-size: cover;
+    color: gray;
+}
+.h6-2-penyusun {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    transform: (-40%, -45%)
+}
+.img-2-penyusun {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: (-45%, -45%)
+}
+.p-2-penyusun {
+    position: absolute;
+    left: 37%;
+    top: 70%;
+    transform: (-70%, -37%)
+}
+.h4-3-penyusun {
+    position: absolute;
+    top: 85%;
+    transform: (-85%, 0%)
+}
+.table-1-3-penyusun {
+    display: flex;
+}
+.img-1-3-penyusun {
+    position: absolute;
+    top: 90%;
+    transform: (-90%, 0%);
+    width:120px;
+    height:130px;
+}
+.ul-1-3-penyusun {
+    position: absolute;
+    top: 92%;
+    left: 20%;
+    transform: (-92%, -20%);
+    list-style-type: none;
+}
+.img-2-3-penyusun {
+    position: absolute;
+    top: 110%;
+    transform: (-110%, 0%);
+    width:120px;
+    height:130px;
+}
+.ul-2-3-penyusun {
+    position: absolute;
+    top: 112%;
+    left: 20%;
+    transform: (-112%, -20%);
+    list-style-type: none;
+}
+.img-3-3-penyusun {
+    position: absolute;
+    top: 130%;
+    transform: (-130%, 0%);
+    width:120px;
+    height:130px;
+}
+.ul-3-3-penyusun {
+    position: absolute;
+    top: 132%;
+    left: 20%;
+    transform: (-132%, -20%);
+    list-style-type: none;
+}
+.img-4-3-penyusun {
+    position: absolute;
+    top: 150%;
+    transform: (-150%, 0%);
+    width:130px;
+    height:120px;
+}
+.ul-4-3-penyusun {
+    position: absolute;
+    top: 152%;
+    left: 20%;
+    transform: (-152%, -20%);
+    list-style-type: none;
+}
+.img-5-3-penyusun {
+    position: absolute;
+    top: 170%;
+    transform: (-170%, 0%);
+    width:130px;
+    height:120px;
+}
+.ul-5-3-penyusun {
+    position: absolute;
+    top: 172%;
+    left: 20%;
+    transform: (-172%, -20%);
+    list-style-type: none;
+}
+.img-6-3-penyusun {
+    position: absolute;
+    top: 190%;
+    transform: (-190%, 0%);
+    width:130px;
+    height:120px;
+}
+.ul-6-3-penyusun {
+    position: absolute;
+    top: 192%;
+    left: 20%;
+    transform: (-192%, -20%);
+    list-style-type: none;
+}
+.div-footer-penyusun {
+    position: absolute;
+    top: 230%;
+    left: 0%;
+    transform: (-230%, -0%);
+    background-image: url(bendera.png);
+    background-size: cover;
+    height: 100px;
+}
+.h1-footer-penyusun {
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    transform: (-45%, -40%)
+}
+.button-footer-penyusun{
+    position: absolute;
+    top: -30%;
+    left: 50%
+}
+.div-1-website{
+    background-image:url(bg1.png);
+    background-size: cover;
+    height: 100px;
+}
+.body-website{
+    scroll-behavior: auto;
+    scrollbar-width: none;
+}
+.img-1-2-website{
+    position: absolute;
+    top: 40%;
+}
+.h1-1-2-website{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+}
+.p-1-2-website{
+    position: absolute;
+    top: 47%;
+    left: 16%;
+}
+.button-1-website{
+    position: absolute;
+    top: 52%;
+    left: 16%;
+    border-radius: 5px;
+}
+.img-2-2-website{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+.h1-2-2-website{
+    position: absolute;
+    top: 80%;
+    left: 28%;
+}
+.p-2-2-website{
+    position: absolute;
+    top: 87%;
+    left: 28%;
+}
+.button-2-website{
+    position: absolute;
+    top: 92%;
+    left: 28%;
+    border-radius: 5px;
+}
+.img-3-2-website{
+    position: absolute;
+    top: 120%;
+}
+.h1-3-2-website{
+    position: absolute;
+    top: 120%;
+    left: 24%;
+}
+.p-3-2-website{
+    position: absolute;
+    top: 127%;
+    left: 24%;
+}
+.button-3-website{
+    position: absolute;
+    top: 132%;
+    left: 24%;
+    border-radius: 5px;
+}
+.h1-websiteakhir{
+    position: absolute;
+    top: 160%;
+    left: 35%;
+}
+.div-1-konten{
+    background-image:url(bg2.png);
+    background-size:cover;
+    opacity: 1;
+    height: 20%;
+    border-radius:6px;
+    scroll-behavior: auto;
+}
+.li-konten{
+    list-style-type:disc;
+}
+.div-1-3-konten{
+    font-style:bold;
+    position: absolute;
+    top: 50%;
+}
+.div-DNS-1{
+    position: absolute;
+    top: 105%;
+}
+.li-dns{
+    list-style-type: none;
+    font-weight: bold;
+}
+.li1-dns{
+    list-style-type: calc(1);
+}
+.li2-dns{
+    list-style-type: calc(2);
+}
+.div-perb-1{
+    position: absolute;
+    top: 180%
+}
+.li1-contoh {
+    list-style-type: calc(1);
+}
+.li-1-3-konten{
+    list-style-type: disc;
+}
+.button-konten {
+    background-color: yellow;
+    height: 50px;
+    width: 150px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    position: absolute;
+    left:120%;
+    top:150%;
+}
+.button-konten::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px
+}
+/* glow */
+.button-konten::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.button-konten:hover::before {
+    opacity: 1;
+}
+.button-konten:active:after{
+    background: transparent;
+}
+.button-konten:active{
+    color:#000;
+    font-weight: bold;
+}
+.li1-perb{
+    list-style-type: disc;
+}
+.div-perb-1{
+    position: absolute;
+    top: 180%
+}
+.div-contoh-1{
+    position: absolute;
+    top: 105%;
+}
